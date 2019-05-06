@@ -14,6 +14,7 @@
 		FF07027E226D5F090054B756 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF07027C226D5F090054B756 /* LaunchScreen.storyboard */; };
 		FF070289226D5F090054B756 /* Class003Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF070288226D5F090054B756 /* Class003Tests.swift */; };
 		FF070294226D5F090054B756 /* Class003UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF070293226D5F090054B756 /* Class003UITests.swift */; };
+		FFC69F16227FDEF100AD20FB /* MyBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC69F15227FDEF100AD20FB /* MyBrowserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		FF07028F226D5F090054B756 /* Class003UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Class003UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF070293226D5F090054B756 /* Class003UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class003UITests.swift; sourceTree = "<group>"; };
 		FF070295226D5F090054B756 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFC69F15227FDEF100AD20FB /* MyBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBrowserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				FF07027A226D5F090054B756 /* Assets.xcassets */,
 				FF07027C226D5F090054B756 /* LaunchScreen.storyboard */,
 				FF07027F226D5F090054B756 /* Info.plist */,
+				FFC69F15227FDEF100AD20FB /* MyBrowserViewController.swift */,
 			);
 			path = Class003;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF070276226D5EFC0054B756 /* ViewController.swift in Sources */,
+				FFC69F16227FDEF100AD20FB /* MyBrowserViewController.swift in Sources */,
 				FF070274226D5EFC0054B756 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
