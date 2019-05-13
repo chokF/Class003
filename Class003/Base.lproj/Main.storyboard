@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2c9-6H-QaV">
-                                <rect key="frame" x="344" y="232" width="50" height="30"/>
+                                <rect key="frame" x="344" y="801" width="50" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="2If-F5-ekg"/>
                                     <constraint firstAttribute="width" constant="50" id="6R6-Bn-A2h"/>
@@ -27,24 +27,43 @@
                                 <state key="normal" title="GO"/>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G8Z-fD-qoK">
-                                <rect key="frame" x="20" y="232" width="307" height="30"/>
+                                <rect key="frame" x="20" y="801" width="307" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="7xy-Aw-141" id="EAQ-XR-c3S"/>
+                                </connections>
                             </textField>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pdo-aB-cYa">
+                                <rect key="frame" x="20" y="98" width="374" height="695"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" red="0.92206284947127759" green="1" blue="0.15294568381968621" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="aQk-vP-5AH" firstAttribute="bottom" secondItem="2c9-6H-QaV" secondAttribute="bottom" constant="600" id="99K-m3-ax6"/>
+                            <constraint firstItem="Pdo-aB-cYa" firstAttribute="leading" secondItem="aQk-vP-5AH" secondAttribute="leading" constant="20" id="7si-st-0MV"/>
+                            <constraint firstItem="aQk-vP-5AH" firstAttribute="bottom" secondItem="2c9-6H-QaV" secondAttribute="bottom" constant="31" id="99K-m3-ax6"/>
                             <constraint firstItem="2c9-6H-QaV" firstAttribute="leading" secondItem="G8Z-fD-qoK" secondAttribute="trailing" constant="17" id="FMp-ss-38q"/>
+                            <constraint firstItem="Pdo-aB-cYa" firstAttribute="leading" secondItem="aQk-vP-5AH" secondAttribute="leading" constant="20" id="FUM-Tm-JtG"/>
                             <constraint firstItem="aQk-vP-5AH" firstAttribute="trailing" secondItem="2c9-6H-QaV" secondAttribute="trailing" constant="20" id="FXY-8C-bDv"/>
                             <constraint firstItem="2c9-6H-QaV" firstAttribute="centerY" secondItem="G8Z-fD-qoK" secondAttribute="centerY" id="G8B-lp-qho"/>
+                            <constraint firstItem="aQk-vP-5AH" firstAttribute="trailing" secondItem="Pdo-aB-cYa" secondAttribute="trailing" constant="20" id="Llu-sm-otU"/>
+                            <constraint firstItem="2c9-6H-QaV" firstAttribute="top" secondItem="Pdo-aB-cYa" secondAttribute="bottom" constant="8" id="Wm2-6s-LMp"/>
                             <constraint firstItem="G8Z-fD-qoK" firstAttribute="leading" secondItem="aQk-vP-5AH" secondAttribute="leading" constant="20" id="bdP-zP-6cw"/>
+                            <constraint firstItem="aQk-vP-5AH" firstAttribute="trailing" secondItem="Pdo-aB-cYa" secondAttribute="trailing" constant="20" id="d1j-mR-gFw"/>
+                            <constraint firstItem="Pdo-aB-cYa" firstAttribute="top" secondItem="aQk-vP-5AH" secondAttribute="top" constant="10" id="odo-V5-5Tr"/>
+                            <constraint firstItem="2c9-6H-QaV" firstAttribute="top" secondItem="Pdo-aB-cYa" secondAttribute="bottom" constant="8" id="tjb-pV-5kc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aQk-vP-5AH"/>
                     </view>
                     <connections>
                         <outlet property="btnGoBottomConstraint" destination="99K-m3-ax6" id="vux-4Z-MIU"/>
+                        <outlet property="myWebView" destination="Pdo-aB-cYa" id="GwT-t3-Gmg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j5o-pO-fk1" userLabel="First Responder" sceneMemberID="firstResponder"/>

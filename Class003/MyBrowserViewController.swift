@@ -7,14 +7,21 @@
 //
 
 import UIKit
+import WebKit
 
-class MyBrowserViewController: UIViewController {
+class MyBrowserViewController: UIViewController,UITextFieldDelegate {
 
     @IBOutlet weak var btnGoBottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var myWebView: WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        myWebView.load(URLRequest(url: URL(string: "https://www.google.com")!))
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -33,6 +40,33 @@ class MyBrowserViewController: UIViewController {
         
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    //MARK: - TextField
+    
+    func textField(_ textField: UITextField,shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        let accept = "abcdeABCDE"
+        
+        let cs = NSCharacterSet(charactersIn: accept).inverted
+        
+        let filters = string.components(separatedBy: cs).joined(separator: "")
+        
+        if(string != filters){
+            return false
+        }
+        
+        let current = textField.text! as NSString
+        
+        let newString:NSString = current.replacingCharacters(in: range, with: string) as NSString
+        
+        return newString.length <= 10
+    }
+    
+    //MARK: - Keyboard
+    
     @objc func keyboardWillAppear(notification:NSNotification?){
         print("keyboardWillAppear")
         
@@ -40,12 +74,19 @@ class MyBrowserViewController: UIViewController {
             return
         }
         
-        self.btnGoBottomConstraint.constant = frame.cgRectValue.height;        
+        
+        UIView.animate(withDuration: 50, animations: {
+            self.btnGoBottomConstraint.constant = frame.cgRectValue.height;
+        })
     }
     
     @objc func keyboardWillDisAppear(notification:NSNotification?){
         print("keyboardWillDisAppear")
-        self.btnGoBottomConstraint.constant = 31;
+        
+        
+        UIView.animate(withDuration: 15, animations: {
+            self.btnGoBottomConstraint.constant = 31;
+        })
     }
 
 }
