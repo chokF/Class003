@@ -10,6 +10,7 @@ import UIKit
 
 class MyBrowserViewController: UIViewController {
 
+    @IBOutlet weak var btnGoBottomConstraint: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,10 +35,17 @@ class MyBrowserViewController: UIViewController {
     
     @objc func keyboardWillAppear(notification:NSNotification?){
         print("keyboardWillAppear")
+        
+        guard let frame = notification?.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else{
+            return
+        }
+        
+        self.btnGoBottomConstraint.constant = frame.cgRectValue.height;        
     }
     
     @objc func keyboardWillDisAppear(notification:NSNotification?){
         print("keyboardWillDisAppear")
+        self.btnGoBottomConstraint.constant = 31;
     }
 
 }
