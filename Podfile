@@ -7,6 +7,7 @@ target 'Class003' do
 
   # Pods for Class003
   pod 'SwiftyJSON', '~> 4.0'
+  pod 'SQLite.swift', '~> 0.12.0'
 
 
   target 'Class003Tests' do

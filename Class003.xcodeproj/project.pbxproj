@@ -12,6 +12,8 @@
 		EA8391FEC8479741749D31A0 /* Pods_Class003Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81D4759329088D67C782B8F1 /* Pods_Class003Tests.framework */; };
 		F401C68422924B5A005D539C /* AsyncRequestWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F401C68322924B5A005D539C /* AsyncRequestWorker.swift */; };
 		F4E8122D22891FAD008EF7ED /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E8122C22891FAD008EF7ED /* WebKit.framework */; };
+		F4F7C664229B876F001ADF45 /* FileWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F7C663229B876F001ADF45 /* FileWorker.swift */; };
+		F4F7C666229B9409001ADF45 /* ServiceCategoryContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F7C665229B9409001ADF45 /* ServiceCategoryContext.swift */; };
 		FF070274226D5EFC0054B756 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF070273226D5EFC0054B756 /* AppDelegate.swift */; };
 		FF070276226D5EFC0054B756 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF070275226D5EFC0054B756 /* ViewController.swift */; };
 		FF070279226D5EFC0054B756 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF070277226D5EFC0054B756 /* Main.storyboard */; };
@@ -51,6 +53,8 @@
 		F38A7653B213B7B5664454CA /* Pods-Class003UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Class003UITests.release.xcconfig"; path = "Target Support Files/Pods-Class003UITests/Pods-Class003UITests.release.xcconfig"; sourceTree = "<group>"; };
 		F401C68322924B5A005D539C /* AsyncRequestWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncRequestWorker.swift; sourceTree = "<group>"; };
 		F4E8122C22891FAD008EF7ED /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		F4F7C663229B876F001ADF45 /* FileWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWorker.swift; sourceTree = "<group>"; };
+		F4F7C665229B9409001ADF45 /* ServiceCategoryContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCategoryContext.swift; sourceTree = "<group>"; };
 		FF070270226D5EFC0054B756 /* Class003.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Class003.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF070273226D5EFC0054B756 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF070275226D5EFC0054B756 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +157,8 @@
 				FF07027F226D5F090054B756 /* Info.plist */,
 				FFC69F15227FDEF100AD20FB /* MyBrowserViewController.swift */,
 				F401C68322924B5A005D539C /* AsyncRequestWorker.swift */,
+				F4F7C663229B876F001ADF45 /* FileWorker.swift */,
+				F4F7C665229B9409001ADF45 /* ServiceCategoryContext.swift */,
 			);
 			path = Class003;
 			sourceTree = "<group>";
@@ -337,12 +343,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Class003/Pods-Class003-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,8 +410,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F401C68422924B5A005D539C /* AsyncRequestWorker.swift in Sources */,
+				F4F7C666229B9409001ADF45 /* ServiceCategoryContext.swift in Sources */,
 				FF070276226D5EFC0054B756 /* ViewController.swift in Sources */,
 				FFC69F16227FDEF100AD20FB /* MyBrowserViewController.swift in Sources */,
+				F4F7C664229B876F001ADF45 /* FileWorker.swift in Sources */,
 				FF070274226D5EFC0054B756 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

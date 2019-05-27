@@ -20,6 +20,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //print("\(UserDefaults.standard.string(forKey:"hi")!)")
+        
+        let worker : FileWorker = FileWorker()
+        
+        worker.writeToFile(content: "中文", fileName: "info.txt", tag: 0)
+        
+        let result : String = worker.readFromFile(fileName: "info.txt", tag: 0)
+        
+        print(result)
     }
 
 
