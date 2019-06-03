@@ -97,6 +97,35 @@
             </objects>
             <point key="canvasLocation" x="597.10144927536237" y="-132.58928571428572"/>
         </scene>
+        <!--My Map View Controller-->
+        <scene sceneID="SWh-dD-d1v">
+            <objects>
+                <viewController id="DHk-5g-h0I" customClass="MyMapViewController" customModule="Class003" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7ut-Pb-6N3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fj8-N4-emc">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fj8-N4-emc" firstAttribute="trailing" secondItem="Fh5-Aa-0Oe" secondAttribute="trailing" id="NaI-Bp-4HW"/>
+                            <constraint firstItem="fj8-N4-emc" firstAttribute="top" secondItem="Fh5-Aa-0Oe" secondAttribute="top" id="O3b-67-ZMa"/>
+                            <constraint firstItem="fj8-N4-emc" firstAttribute="leading" secondItem="Fh5-Aa-0Oe" secondAttribute="leading" id="Zuz-Nb-W8A"/>
+                            <constraint firstItem="fj8-N4-emc" firstAttribute="bottom" secondItem="Fh5-Aa-0Oe" secondAttribute="bottom" id="ueA-oK-nMF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Fh5-Aa-0Oe"/>
+                    </view>
+                    <connections>
+                        <outlet property="myMapView" destination="fj8-N4-emc" id="3w6-uA-5xb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UpG-Ez-gDP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="595.6521739130435" y="576.5625"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -142,6 +171,16 @@
                                     <action selector="btnMoveToImageClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hst-Up-tZW"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7H-yp-GCV">
+                                <rect key="frame" x="193" y="433" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Map">
+                                    <color key="titleColor" white="1" alpha="0.84705882352941175" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnMapClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3tI-1J-puE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.22243708061197176" green="0.2588268905630513" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -150,6 +189,7 @@
                     <connections>
                         <outlet property="lbMessage" destination="pl5-1s-Mdt" id="54M-oN-eWq"/>
                         <segue destination="ziX-0g-rXc" kind="show" identifier="moveToM2KSegue" id="dfl-a6-Epp"/>
+                        <segue destination="DHk-5g-h0I" kind="show" identifier="moveToMapSegue" id="bos-Uf-bKc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
