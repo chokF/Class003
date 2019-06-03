@@ -11,6 +11,9 @@
 		41E4620FFC336D0C32967199 /* Pods_Class003.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3E4A59FB7768635F40E37B6 /* Pods_Class003.framework */; };
 		EA8391FEC8479741749D31A0 /* Pods_Class003Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81D4759329088D67C782B8F1 /* Pods_Class003Tests.framework */; };
 		F401C68422924B5A005D539C /* AsyncRequestWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F401C68322924B5A005D539C /* AsyncRequestWorker.swift */; };
+		F4CBC02422A4AC1900F70DCE /* ServiceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBC02322A4AC1900F70DCE /* ServiceCategory.swift */; };
+		F4CBC02622A4AC4300F70DCE /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBC02522A4AC4300F70DCE /* Store.swift */; };
+		F4CBC02822A4B45800F70DCE /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBC02722A4B45800F70DCE /* ImageViewController.swift */; };
 		F4E8122D22891FAD008EF7ED /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E8122C22891FAD008EF7ED /* WebKit.framework */; };
 		F4F7C664229B876F001ADF45 /* FileWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F7C663229B876F001ADF45 /* FileWorker.swift */; };
 		F4F7C666229B9409001ADF45 /* ServiceCategoryContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F7C665229B9409001ADF45 /* ServiceCategoryContext.swift */; };
@@ -52,6 +55,9 @@
 		C3E4A59FB7768635F40E37B6 /* Pods_Class003.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Class003.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F38A7653B213B7B5664454CA /* Pods-Class003UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Class003UITests.release.xcconfig"; path = "Target Support Files/Pods-Class003UITests/Pods-Class003UITests.release.xcconfig"; sourceTree = "<group>"; };
 		F401C68322924B5A005D539C /* AsyncRequestWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncRequestWorker.swift; sourceTree = "<group>"; };
+		F4CBC02322A4AC1900F70DCE /* ServiceCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCategory.swift; sourceTree = "<group>"; };
+		F4CBC02522A4AC4300F70DCE /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		F4CBC02722A4B45800F70DCE /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		F4E8122C22891FAD008EF7ED /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		F4F7C663229B876F001ADF45 /* FileWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWorker.swift; sourceTree = "<group>"; };
 		F4F7C665229B9409001ADF45 /* ServiceCategoryContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCategoryContext.swift; sourceTree = "<group>"; };
@@ -159,6 +165,9 @@
 				F401C68322924B5A005D539C /* AsyncRequestWorker.swift */,
 				F4F7C663229B876F001ADF45 /* FileWorker.swift */,
 				F4F7C665229B9409001ADF45 /* ServiceCategoryContext.swift */,
+				F4CBC02322A4AC1900F70DCE /* ServiceCategory.swift */,
+				F4CBC02522A4AC4300F70DCE /* Store.swift */,
+				F4CBC02722A4B45800F70DCE /* ImageViewController.swift */,
 			);
 			path = Class003;
 			sourceTree = "<group>";
@@ -409,8 +418,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4CBC02422A4AC1900F70DCE /* ServiceCategory.swift in Sources */,
+				F4CBC02822A4B45800F70DCE /* ImageViewController.swift in Sources */,
 				F401C68422924B5A005D539C /* AsyncRequestWorker.swift in Sources */,
 				F4F7C666229B9409001ADF45 /* ServiceCategoryContext.swift in Sources */,
+				F4CBC02622A4AC4300F70DCE /* Store.swift in Sources */,
 				FF070276226D5EFC0054B756 /* ViewController.swift in Sources */,
 				FFC69F16227FDEF100AD20FB /* MyBrowserViewController.swift in Sources */,
 				F4F7C664229B876F001ADF45 /* FileWorker.swift in Sources */,

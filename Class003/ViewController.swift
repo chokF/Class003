@@ -17,6 +17,12 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func btnMoveToImageClicked(_ sender: Any) {
+        performSegue(withIdentifier: "moveToM2KSegue", sender: self)
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -30,6 +36,13 @@ class ViewController: UIViewController {
         let result : String = worker.readFromFile(fileName: "info.txt", tag: 0)
         
         print(result)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "moveToM2KSegue"){
+            let vc = segue.destination as! ImageViewController
+            vc.index = 5
+        }
     }
 
 
