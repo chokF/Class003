@@ -16,6 +16,8 @@
 		F4CBC02822A4B45800F70DCE /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBC02722A4B45800F70DCE /* ImageViewController.swift */; };
 		F4CBC02A22A4C7E800F70DCE /* MyMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBC02922A4C7E800F70DCE /* MyMapViewController.swift */; };
 		F4DC139F22B724540015B509 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DC139E22B724540015B509 /* ProductListViewController.swift */; };
+		F4DC13A122B7373E0015B509 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DC13A022B7373E0015B509 /* MyTableViewCell.swift */; };
+		F4DC13A322B744820015B509 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DC13A222B744820015B509 /* DetailViewController.swift */; };
 		F4E8122D22891FAD008EF7ED /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E8122C22891FAD008EF7ED /* WebKit.framework */; };
 		F4F7C664229B876F001ADF45 /* FileWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F7C663229B876F001ADF45 /* FileWorker.swift */; };
 		F4F7C666229B9409001ADF45 /* ServiceCategoryContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F7C665229B9409001ADF45 /* ServiceCategoryContext.swift */; };
@@ -62,6 +64,8 @@
 		F4CBC02722A4B45800F70DCE /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		F4CBC02922A4C7E800F70DCE /* MyMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapViewController.swift; sourceTree = "<group>"; };
 		F4DC139E22B724540015B509 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		F4DC13A022B7373E0015B509 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		F4DC13A222B744820015B509 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F4E8122C22891FAD008EF7ED /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		F4F7C663229B876F001ADF45 /* FileWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWorker.swift; sourceTree = "<group>"; };
 		F4F7C665229B9409001ADF45 /* ServiceCategoryContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCategoryContext.swift; sourceTree = "<group>"; };
@@ -174,6 +178,8 @@
 				F4CBC02722A4B45800F70DCE /* ImageViewController.swift */,
 				F4CBC02922A4C7E800F70DCE /* MyMapViewController.swift */,
 				F4DC139E22B724540015B509 /* ProductListViewController.swift */,
+				F4DC13A022B7373E0015B509 /* MyTableViewCell.swift */,
+				F4DC13A222B744820015B509 /* DetailViewController.swift */,
 			);
 			path = Class003;
 			sourceTree = "<group>";
@@ -424,11 +430,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4DC13A322B744820015B509 /* DetailViewController.swift in Sources */,
 				F4CBC02422A4AC1900F70DCE /* ServiceCategory.swift in Sources */,
 				F4CBC02822A4B45800F70DCE /* ImageViewController.swift in Sources */,
 				F401C68422924B5A005D539C /* AsyncRequestWorker.swift in Sources */,
 				F4CBC02A22A4C7E800F70DCE /* MyMapViewController.swift in Sources */,
 				F4F7C666229B9409001ADF45 /* ServiceCategoryContext.swift in Sources */,
+				F4DC13A122B7373E0015B509 /* MyTableViewCell.swift in Sources */,
 				F4CBC02622A4AC4300F70DCE /* Store.swift in Sources */,
 				FF070276226D5EFC0054B756 /* ViewController.swift in Sources */,
 				FFC69F16227FDEF100AD20FB /* MyBrowserViewController.swift in Sources */,
