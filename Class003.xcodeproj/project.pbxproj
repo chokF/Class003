@@ -15,6 +15,7 @@
 		F4CBC02622A4AC4300F70DCE /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBC02522A4AC4300F70DCE /* Store.swift */; };
 		F4CBC02822A4B45800F70DCE /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBC02722A4B45800F70DCE /* ImageViewController.swift */; };
 		F4CBC02A22A4C7E800F70DCE /* MyMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBC02922A4C7E800F70DCE /* MyMapViewController.swift */; };
+		F4DC139F22B724540015B509 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DC139E22B724540015B509 /* ProductListViewController.swift */; };
 		F4E8122D22891FAD008EF7ED /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E8122C22891FAD008EF7ED /* WebKit.framework */; };
 		F4F7C664229B876F001ADF45 /* FileWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F7C663229B876F001ADF45 /* FileWorker.swift */; };
 		F4F7C666229B9409001ADF45 /* ServiceCategoryContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F7C665229B9409001ADF45 /* ServiceCategoryContext.swift */; };
@@ -60,6 +61,7 @@
 		F4CBC02522A4AC4300F70DCE /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		F4CBC02722A4B45800F70DCE /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		F4CBC02922A4C7E800F70DCE /* MyMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapViewController.swift; sourceTree = "<group>"; };
+		F4DC139E22B724540015B509 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		F4E8122C22891FAD008EF7ED /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		F4F7C663229B876F001ADF45 /* FileWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWorker.swift; sourceTree = "<group>"; };
 		F4F7C665229B9409001ADF45 /* ServiceCategoryContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCategoryContext.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				F4CBC02522A4AC4300F70DCE /* Store.swift */,
 				F4CBC02722A4B45800F70DCE /* ImageViewController.swift */,
 				F4CBC02922A4C7E800F70DCE /* MyMapViewController.swift */,
+				F4DC139E22B724540015B509 /* ProductListViewController.swift */,
 			);
 			path = Class003;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				FF070276226D5EFC0054B756 /* ViewController.swift in Sources */,
 				FFC69F16227FDEF100AD20FB /* MyBrowserViewController.swift in Sources */,
 				F4F7C664229B876F001ADF45 /* FileWorker.swift in Sources */,
+				F4DC139F22B724540015B509 /* ProductListViewController.swift in Sources */,
 				FF070274226D5EFC0054B756 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

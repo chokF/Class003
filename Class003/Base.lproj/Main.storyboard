@@ -126,6 +126,33 @@
             </objects>
             <point key="canvasLocation" x="595.6521739130435" y="576.5625"/>
         </scene>
+        <!--Product List View Controller-->
+        <scene sceneID="cFs-3g-Fa2">
+            <objects>
+                <viewController id="QqK-9m-XKe" customClass="ProductListViewController" customModule="Class003" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xaz-vq-KMe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9er-H3-wDf">
+                                <rect key="frame" x="0.0" y="29" width="414" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="QqK-9m-XKe" id="th9-o3-jCj"/>
+                                    <outlet property="delegate" destination="QqK-9m-XKe" id="LFj-AR-zuW"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="057-xg-Ur9"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LhV-eE-KcF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-355" y="359"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -181,6 +208,16 @@
                                     <action selector="btnMapClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3tI-1J-puE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Czb-NH-QUh">
+                                <rect key="frame" x="190" y="527" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Table">
+                                    <color key="titleColor" white="1" alpha="0.84705882349999995" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTableClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZG8-Bh-R8r"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.22243708061197176" green="0.2588268905630513" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -190,6 +227,7 @@
                         <outlet property="lbMessage" destination="pl5-1s-Mdt" id="54M-oN-eWq"/>
                         <segue destination="ziX-0g-rXc" kind="show" identifier="moveToM2KSegue" id="dfl-a6-Epp"/>
                         <segue destination="DHk-5g-h0I" kind="show" identifier="moveToMapSegue" id="bos-Uf-bKc"/>
+                        <segue destination="QqK-9m-XKe" kind="show" identifier="moveToTableViewSegue" id="36T-5n-E58"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
