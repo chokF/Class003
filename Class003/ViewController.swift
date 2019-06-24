@@ -19,12 +19,15 @@ class ViewController: UIViewController {
     
 
     @IBAction func btnMapClicked(_ sender: UIButton) {
-         self.performSegue(withIdentifier: "moveToMapSegue", sender: self)
-        
+         self.performSegue(withIdentifier: "moveToMapSegue", sender: self)        
     }
     
     @IBAction func btnTableClicked(_ sender: UIButton) {
          self.performSegue(withIdentifier: "moveToTableViewSegue", sender: self)
+    }
+    
+    @IBAction func btnWebClicked(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "moveToWebSegue", sender: self)
     }
     
     @IBAction func btnMoveToImageClicked(_ sender: Any) {

@@ -11,6 +11,7 @@
 		41E4620FFC336D0C32967199 /* Pods_Class003.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3E4A59FB7768635F40E37B6 /* Pods_Class003.framework */; };
 		EA8391FEC8479741749D31A0 /* Pods_Class003Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81D4759329088D67C782B8F1 /* Pods_Class003Tests.framework */; };
 		F401C68422924B5A005D539C /* AsyncRequestWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F401C68322924B5A005D539C /* AsyncRequestWorker.swift */; };
+		F4412E0E22C06B5E00A69A73 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4412E0D22C06B5E00A69A73 /* WebViewController.swift */; };
 		F4CBC02422A4AC1900F70DCE /* ServiceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBC02322A4AC1900F70DCE /* ServiceCategory.swift */; };
 		F4CBC02622A4AC4300F70DCE /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBC02522A4AC4300F70DCE /* Store.swift */; };
 		F4CBC02822A4B45800F70DCE /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBC02722A4B45800F70DCE /* ImageViewController.swift */; };
@@ -59,6 +60,7 @@
 		C3E4A59FB7768635F40E37B6 /* Pods_Class003.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Class003.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F38A7653B213B7B5664454CA /* Pods-Class003UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Class003UITests.release.xcconfig"; path = "Target Support Files/Pods-Class003UITests/Pods-Class003UITests.release.xcconfig"; sourceTree = "<group>"; };
 		F401C68322924B5A005D539C /* AsyncRequestWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncRequestWorker.swift; sourceTree = "<group>"; };
+		F4412E0D22C06B5E00A69A73 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		F4CBC02322A4AC1900F70DCE /* ServiceCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCategory.swift; sourceTree = "<group>"; };
 		F4CBC02522A4AC4300F70DCE /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		F4CBC02722A4B45800F70DCE /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				F4DC139E22B724540015B509 /* ProductListViewController.swift */,
 				F4DC13A022B7373E0015B509 /* MyTableViewCell.swift */,
 				F4DC13A222B744820015B509 /* DetailViewController.swift */,
+				F4412E0D22C06B5E00A69A73 /* WebViewController.swift */,
 			);
 			path = Class003;
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 				FF070276226D5EFC0054B756 /* ViewController.swift in Sources */,
 				FFC69F16227FDEF100AD20FB /* MyBrowserViewController.swift in Sources */,
 				F4F7C664229B876F001ADF45 /* FileWorker.swift in Sources */,
+				F4412E0E22C06B5E00A69A73 /* WebViewController.swift in Sources */,
 				F4DC139F22B724540015B509 /* ProductListViewController.swift in Sources */,
 				FF070274226D5EFC0054B756 /* AppDelegate.swift in Sources */,
 			);

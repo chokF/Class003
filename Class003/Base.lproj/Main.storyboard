@@ -153,6 +153,21 @@
             </objects>
             <point key="canvasLocation" x="595.6521739130435" y="576.5625"/>
         </scene>
+        <!--Web View Controller-->
+        <scene sceneID="v95-qU-L1p">
+            <objects>
+                <viewController id="qO0-Po-aNc" customClass="WebViewController" customModule="Class003" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yTB-fG-2d6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="y4U-Bl-HXK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VIO-CN-WPd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1210" y="348"/>
+        </scene>
         <!--Product List View Controller-->
         <scene sceneID="cFs-3g-Fa2">
             <objects>
@@ -275,6 +290,16 @@
                                     <action selector="btnTableClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZG8-Bh-R8r"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vcr-iJ-EiP">
+                                <rect key="frame" x="154" y="607" width="109" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="WebViewButton">
+                                    <color key="titleColor" white="1" alpha="0.84705882349999995" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnWebClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kdg-jg-gHf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.22243708061197176" green="0.2588268905630513" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -285,6 +310,7 @@
                         <segue destination="ziX-0g-rXc" kind="show" identifier="moveToM2KSegue" id="dfl-a6-Epp"/>
                         <segue destination="DHk-5g-h0I" kind="show" identifier="moveToMapSegue" id="bos-Uf-bKc"/>
                         <segue destination="QqK-9m-XKe" kind="show" identifier="moveToTableViewSegue" id="36T-5n-E58"/>
+                        <segue destination="qO0-Po-aNc" kind="show" identifier="moveToWebSegue" id="Ilc-Ym-nnz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
